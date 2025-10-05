@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+  letter-spacing: 0.5px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131518;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 412px;
+  background-image: linear-gradient(to bottom right, #232A34, #181E27);
+  padding: 32px 24px;
+  border-radius: 30px;
+}
+section#rate img {
+  background-color: #262E38;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 16px;
+}
+section#thanks {
+  text-align: center;
+}
+section#thanks img {
+  width: 162px;
+  margin: auto;
+}
+section .gap16px {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+section #results {
+  color: #FC7614;
+  background-color: #262E38;
+  padding: 0px 16px;
+  border-radius: 50px;
+  font-size: 15px;
+  line-height: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+section h1 {
+  color: white;
+  font-size: 28px;
+  line-height: 35px;
+}
+section p {
+  color: #969FAD;
+  font-size: 15px;
+  line-height: 24px;
+}
+section #buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+section #buttons button {
+  background-color: #262E38;
+  height: 51px;
+  width: 51px;
+  border-radius: 50%;
+  border: none;
+  color: #969FAD;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+section #buttons button:hover {
+  background-color: white;
+  color: #262E38;
+}
+section #submit {
+  width: 100%;
+  border-radius: 23px;
+  height: 45px;
+  border: none;
+  background-color: #FC7614;
+  color: #131518;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected {
+  background-color: #FC7614 !important;
+  color: #262E38 !important;
+}
+
+.submitHover:hover {
+  background-color: white !important;
+}
+
+@media only screen and (max-width: 450px) {
+  section {
+    max-width: 85vw;
+    gap: 24px;
+  }
+  section#thanks img {
+    width: 144px;
+  }
+  section #results {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  section h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  section p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  section #buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  section #buttons button {
+    height: 42px;
+    width: 42px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}/*# sourceMappingURL=styles.css.map */
