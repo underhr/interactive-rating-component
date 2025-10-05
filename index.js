@@ -19,6 +19,6 @@ submit.addEventListener('click', () => {
     if (rating > 0) {
         rate.classList.add('hidden');
         thanks.classList.remove('hidden');
-        document.getElementById('ratingDisplay').innerHTML = rating;
+        document.getElementById('ratingDisplay').textContent = rating;
     }
 });
