@@ -8,7 +8,7 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         buttons.forEach(b => {b.classList.remove('selected')});
         button.classList.add('selected');
-        rating = button.innerHTML;
+        rating = parseInt(button.textContent, 10);
         if (rating > 0 && !submit.classList.contains('submitHover')) {
             submit.classList.add('submitHover');
         }
