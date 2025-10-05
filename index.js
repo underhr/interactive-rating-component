@@ -4,11 +4,11 @@ const buttons = document.querySelectorAll('#buttons button');
 const submit = document.getElementById('submit');
 let rating = 0;
 
-buttons.forEach(b => {
-    b.addEventListener('click', () => {
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
         buttons.forEach(b => {b.classList.remove('selected')});
-        b.classList.add('selected');
-        rating = b.innerHTML;
+        button.classList.add('selected');
+        rating = button.innerHTML;
         if (rating > 0 && !submit.classList.contains('submitHover')) {
             submit.classList.add('submitHover');
         }
