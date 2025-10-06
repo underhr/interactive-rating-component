@@ -67,6 +67,8 @@ section #buttons {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
 }
 section #buttons button {
   background-color: #262E38;
